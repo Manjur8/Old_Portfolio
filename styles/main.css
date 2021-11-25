@@ -148,3 +148,49 @@ p {
   padding: 20px 10px;
 }
 /* Projects Section */
+.projects {
+  height: 100vh;
+  width: 90%;
+}
+.projects h1 {
+  font-size: 3em;
+}
+
+/* Card Elements */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 255, 1170, 0.2);
+  transition: 0.3s;
+  width: 300px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 255, 170, 0.6);
+}
+
+/* Add some padding inside the card container */
+.projects_container {
+  padding: 2px 16px;
+  color: #fff;
+}
+/* ====== */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 255, 170, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+/* Cards grid */
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: right;
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+}
