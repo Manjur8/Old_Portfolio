@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Sans+Pro:wght@900&display=swap");
+
+/* Typograpgy 
+h1-fontsize :5em
+p- font-size: 1.5em
+*/
+
+* {
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Neon Color */
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+html,
+body {
+  display: grid;
+  place-items: center;
+  background-color: black;
+}
+
+.page-wrapper {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5em;
+  letter-spacing: -0.04em;
+}
+
+p {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.divider {
+  color: white;
+}
+
+.icon {
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: rgb(22, 22, 22);
+}
+
+/* ====Service Section */
+.Service {
+  color: #fff;
+}
+.service_details {
+  font-size: 2.5em;
+  width: 50%;
+}
+.service_details p {
+  font-size: 0.6em;
+  width: 80%;
+}
+
+.Service_content {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 6em;
+}
+/* Skills Sections */
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar {
+  position: relative;
+
+  border: 2px solid #0d96e0;
+
+  border-radius: 20px;
+}
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0d96e0;
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+/* ===bar animation=== */
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 95%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+#javascript-bar {
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100% {
+    width: 72%;
+  }
+}
+
+#react-bar {
+  animation: react-fill 2s forwards;
+}
+@keyframes react-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+/* === */
+.skills .details {
+  font-size: 0.6em;
+}
+.skills_list {
+  padding: 20px 10px;
+}
+/* Projects Section */
